@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 233, 198, 0.2);
+}
+
+.content {
+    min-height: calc(100vh - 70px);
+}
+
+header {
+    height: 70px;
+    background-color: black;
+    width: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.top-menu {
+    height: 70px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: border 1s ease-in-out;
+}
+
+.top-menu a:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        height: auto;
+    }
+
+    .top-menu {
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+
+    .top-menu a {
+        display: block;
+    }
+}
+
+.hero-image {
+    background: url("../assets/img/taxi.jpeg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+@media only screen and (max-width: 400px) {
+    .hero-image {
+        height: 150px;
+    }
+}
+
+.services {
+    padding: 20px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services a {
+    text-decoration: none;
+    color: #ffa500;
+}
+
+.service {
+    width: 100%;
+    border: 1px solid black;
+    margin-right: 20px;
+    position: relative;
+}
+
+.service:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.service:last-child {
+    margin-right: 0;
+}
+
+
+.service-image img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 15px;
+}
+
+.service-content h2 {
+    margin-top: 5px;
+}
+
+.service-content span {
+    font-size: 14px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+    .services {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .service {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .service:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    height: 70px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedbacks {
+    margin: 20px;
+}
+
+.feedback {
+    padding: 3px 12px;
+    margin-bottom: 5px;
+    border: 1px solid #ffa500;
+    background-color: rgba(255, 165, 0, 0.3);
+}
+
+.feedbacks-message {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.feedbacks-message a {
+    text-decoration: none;
+    color: orange;
+}
+
+.form-box {
+    padding: 20px;
+}
+
+.form-box h2 {
+    margin-top: 5px;
+}
+
+.form-field {
+    width: 100%;
+}
+
+label span {
+    font-size: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+.input-error {
+    color: red;
+    text-align: right;
+    margin: 0;
+    font-size: 15px;
+}
+
+.form-error {
+    display: block;
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-success {
+    display: block;
+    color: green;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-field input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px !important;
+    font-size: 20px;
+    display: block;
+
+}

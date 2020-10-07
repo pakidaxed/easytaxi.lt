@@ -37,9 +37,6 @@ class FileDB
         return file_put_contents($this->file_name, $string) !== false;
     }
 
-    /*
-     * Loading data from DB file
-     */
     public function load()
     {
         if (file_exists($this->file_name)) {
